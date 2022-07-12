@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="container">
+
+    <header class="header">
+        <h1 id="title" class="text-center">Website Builders America Survey Form</h1>
+        <p id="description" class="description text-center">
+            Thank you for taking the time to help us inprove our service!
+        </p>
+    </header>
+
+    <form id="survey-form">
+
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="0" max="100" class="form-control" placeholder="Age" />
+        </div>
+
+
+        <div class="form-group">
+            <p>Which best describes your agency?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Website Development</option>
+        <option value="fulljob">Marketing</option>
+        <option value="fulljob">Digital Marketing</option>
+        <option value="other">Other</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend Website Builders America to a friend?</p>
+            <label>
+          <input
+                 name="user-recommend"
+                 value="definitely"
+                 type="radio"
+                 class="input-radio"/>Definitely</label>
+
+            <label>
+          <input
+                 name="user-recommend"
+                 value="maybe"
+                 type="radio"
+                 class="input-radio"/>Maybe</label>
+
+            <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"/>Not sure</label>
+        </div>
+
+        <div class="form-group">
+            <p>What is your favorite feature of Website Builders America?</p>
+            <select id="most-like" name="mostlike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="opensource">Open Source</option>
+            <option value="community">Other</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <p>What would you like to see improved?<span class="clue">(Check all that apply)</span>
+            </p>
+
+            <label>
+          <input
+                 name="improve"
+                 value="consulting"
+                 type="checkbox"
+                 class="input-checkbox"/>Consulting</label>
+
+            <label>
+          <input
+                 name="improve"
+                 value="design"
+                 type="checkbox"
+                 class="input-checkbox"/>Design
+          </label>
+
+            <label>
+          <input
+                 name="improve"
+                 value="logo"
+                 type="checkbox"
+                 class="input-checkbox"/>logo
+          </label>
+
+            <label>
+          <input
+                 name="improve"
+                 value="price"
+                 type="checkbox"
+                 class="input-checkbox"/>Price
+          </label>
+
+            <label>
+          <input
+                 name="improve"
+                 value="website"
+                 type="checkbox"
+                 class="input-checkbox"/>Website
+          </label>
+
+            <label>
+          <input
+                 name="improve"
+                 value="service"
+                 type="checkbox"
+                 class="input-checkbox"/>Service
+          </label>
+
+            <label>
+          <input
+                 name="improve"
+                 value="communication"
+                 type="checkbox"
+                 class="input-checkbox"/>Communication</label>
+        </div>
+
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+
+
+    </form>
+</div>
+
+<body>
+
+</body>
+
+</html>
